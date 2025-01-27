@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio personnel de Sara, développeuse web.">
+        <title>Portfolio de Sara</title>
+        <link rel="stylesheet" href="./Style/styleacceuil.css">
+        <link rel="stylesheet" href="./Style/General.css">
+        <!-- Optionnel : Lien Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a href="PageAcceuil.html" class="navbar-brand d-flex align-items-center">
+                <img src="./assets/Image/Logo.jpg" alt="Logo" class="me-2" style="height: 40px;">
+                 Sara Ait Ouahioune
+                </a>
+                <!-- Bouton hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                 <!-- Menu de navigation -->
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageAcceuil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pageapropos.html"> A propos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageProjets.html">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageCompetences.html">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageContact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Page d'acceuil -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="intro">
+                <img src="./assets/Image/Tech.jpg" alt="Photo de profil" class="profile-pic">
+                <h1>Bienvenue dans mon univers</h1>
+                <p>👩‍💻 Développeuse web spécialisée en création d'expériences digitales innovantes.</p>
+                <a href="./assets/Cv_Sara.pdf" target="_blank"download class="btn">📄 Télécharger mon CV</a>
+            </div>
+            <div class="tech-bg">
+                <div class="tech-glow"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer et liens vers les réseaux sociaux-->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Sara. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sara-a-a874b126a/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Script/script.js"></script>
+</body>
+</html>

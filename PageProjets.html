@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio personnel de Sara, développeuse web.">
+        <title>Portfolio de Sara</title>
+        <link rel="stylesheet" href="./Style/styleprojet.css">
+        <link rel="stylesheet" href="./Style/General.css">
+        <!-- Optionnel : Lien Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a href="PageAcceuil.html" class="navbar-brand d-flex align-items-center">
+                    <img src="./assets/Image/Logo.jpg" alt="Logo" class="me-2" style="height: 40px;">
+                     Sara Ait Ouahioune
+                    </a>
+                </a>
+    
+                <!-- Bouton hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                 <!-- Menu de navigation -->
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageAcceuil.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pageapropos.html"> A propos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageProjets.html">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageCompetences.html">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageContact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Insertion des Projets -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Mes Projets</h2>
+            <div class="project-gallery">
+                <div class="project-card" data-project="1">
+                    <img src="./assets/Image/ProjetSd.png" alt="Projet 1">
+                    <h3> Analyse des données</h3>
+                    <p>Analyse d'un échantillon de données concernant l’émission de CO2 générée par la production d’électricité, pour prédire la qualité des émissions sur Jupyter Notebook.</p>
+                    <a href="https://github.com/Saraait0/ProjetARE.git" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
+                    <a href="./assets/Présentation ARE (1).pdf" target="_blank" download class="btn">📄 Compte Rendu</a>
+                </div>
+                <div class="project-card" data-project="2">
+                    <img src="./assets/Image/Projet2.png" alt="Projet 2">
+                    <h3>Simulation en C avancé</h3>
+                    <p>La simulation d'un écosystème proies et prédateurs en C avancé consiste à modéliser les interactions entre deux populations biologiques (les proies et les prédateurs) dans un environnement donné. Ce type de projet permet de manipuler des concepts avancés en C, tels que les structures, la gestion dynamique de mémoire, les fichiers, et les algorithmes de simulation.</p>
+                    <a href="https://github.com/Saraait0/ProjetC.git" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
+                </div>
+                <div class="project-card" data-project="3">
+                    <img src="./assets/Image/Projet3.png" alt="Projet 3">
+                    <h3>Création d'un site web</h3>
+                    <p>Création d'un site web représentatif pour un restaurant nommé Cezam, 
+                    comprenant les sections essentielles telles qu'une présentation du restaurant,
+                    la carte complète du menu avec descriptions et prix, ainsi qu'une page dédiée aux informations de contact incluant l'adresse, le numéro de téléphone, les horaires d'ouverture, et un formulaire de réservation ou de contact.</p>
+                    <a href="https://github.com/Saraait0/ProjetDev.git" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
+                    <a href="https://saraait0.github.io/ProjetDevWeb/" target="_blank" class="btn btn-primary">Voirle site</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Modal pour les détails -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title">Titre du Projet</h3>
+            <p id="modal-description">Détails du projet ici...</p>
+            <a href="#" id="modal-link" class="btn">Voir plus</a>
+        </div>
+    </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Sara. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sara-a-a874b126a/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Script/script.js"></script>
+</body>
+</html>

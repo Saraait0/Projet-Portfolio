@@ -1,0 +1,155 @@
+
+/* Variables de couleurs */
+:root {
+    --primary-color: #4A90E2; /* Bleu clair et moderne */
+    --secondary-color: #50E3C2; /* Vert turquoise doux */
+    --accent-color: #F5A623; /* Jaune doux pour les accents */
+    --text-color: #333333; /* Gris foncé pour le texte */
+    --background-light: #FFFFFF; /* Fond clair pour les boxes */
+    --background-dark: #1C1C1C; /* Fond sombre pour la page */
+    --section-bg: #2A2A2A; /* Fond encore plus sombre pour les sections */
+    --footer-bg: rgba(0, 0, 0, 0.9); /* Fond sombre pour le footer */
+    --background-gradient: linear-gradient(120deg, #1C1C1C, #4A90E2); /* Fond dégradé rappelant l'accueil */
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background: var(--background-gradient); /* Gradient rappelant l'accueil */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    position: relative;
+}
+
+/* Section titre avec animation */
+h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    animation: underlineEffect 1.5s ease-in-out infinite;
+}
+
+@keyframes underlineEffect {
+    0% {
+        width: 50px;
+    }
+    50% {
+        width: 80px;
+    }
+    100% {
+        width: 50px;
+    }
+}
+
+p {
+    color: #555555; /* Gris foncé clair pour le texte */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Sections */
+.section {
+    color: var(--accent-color);
+    padding: 3rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: var(--background-light); /* Fond clair pour les boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+/* Images illustratives */
+.row .text-center p {
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: var(--background-light); /* Fond clair pour les p */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.row .text-center p:hover {
+    box-shadow: 5px 5px 25px rgba(80, 227, 194, 0.4), -5px -5px 25px rgba(80, 227, 194, 0.2);
+    transform: scale(1.05);
+}
+
+/* Grilles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.col-md-4,
+.col-md-8 {
+    padding: 1rem;
+    flex: 1;
+}
+
+.col-md-4 {
+    max-width: 30%;
+}
+
+.col-md-5 {
+    max-width: 65%;
+}
+
+/* Adaptabilité mobile */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4,
+    .col-md-5 {
+        max-width: 100%;
+    }
+}
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .home .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+

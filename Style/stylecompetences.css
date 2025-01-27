@@ -1,0 +1,72 @@
+
+
+/* Style général */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fond plus clair */
+    color: #333; /* Couleur de texte plus foncée */
+}
+
+h2 {
+    text-align: center;
+    margin: 3rem 0;
+    color: #007bff; /* Couleur bleue pour les titres */
+    font-size: 2.5rem;
+}
+
+
+/* Compétences */
+.skills {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.skill-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+/* Effet au survol des cartes */
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .skills .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+

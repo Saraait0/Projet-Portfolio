@@ -1,0 +1,138 @@
+/* Couleurs principales */
+:root {
+    --primary-color: #0078D7; /* Bleu technologique */
+    --secondary-color: #00CFFD; /* Cyan éclatant */
+    --dark-bg: #0A0A0A; /* Fond noir pur */
+    --text-color: #FFFFFF; /* Texte blanc */
+}
+
+/* Style global */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 40, 104, 0.9), rgba(0, 0, 0, 0.95)), url('./assets/Image/TechBackground.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Effet animé dans le background */
+.home::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3), transparent 70%);
+    animation: pulse 6s infinite;
+    transform: rotate(-45deg);
+    z-index: 1;
+}
+
+/* Animation de pulsation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+/* Contenu de la Hero Section */
+.home .intro {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    text-align: center;
+    color: var(--text-color);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.home h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: 0 4px 12px rgba(0, 207, 253, 0.7);
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.home .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: var(--secondary-color);
+    color: var(--dark-bg);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 207, 253, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.home .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 207, 253, 0.7);
+}
+
+
+/* Animation fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.5rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+
+    .home .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
